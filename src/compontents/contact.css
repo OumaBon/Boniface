@@ -1,0 +1,36 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem; 
+ 
+  }
+  
+  .contact-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #ffff; 
+  }
+  
+  .contact-btn {
+    padding: 1rem 2rem;
+    background-color: #ffff; 
+    color: #f97316;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-btn:hover {
+    background-color: #e15a00; 
+  }
+  

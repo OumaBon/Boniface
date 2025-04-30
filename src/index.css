@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base {
+  .heading {
+    @apply text-4xl;
+  }
+  .subheading {
+    @apply text-2xl text-customOrange;
+  }
+  .body-text {
+    @apply font-normal text-customBody;
+  }
+}
+
+/* Common container for consistent layout */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem; /* ensures left/right padding */
+}
+
+
+.introduction, .services, .my-contact , .my-footer{
+  width: 100%;
+  padding: 4rem 0;  
+}
+
+
+.introduction {
+  background-color: #111827;  /* Dark background */
+  color: #ffff;  /* White text */
+}
+
+.services {
+  background-color: #ffff;  /* White background */
+  color: #111827;  /* Dark text */
+}
+
+.my-contact {
+  background-color: #FF6B00;  /* Orange background */
+  color: #ffff;  /* White text */
+}
+
+.my-footer{
+  background-color: #111827;  
+ 
+
 }
