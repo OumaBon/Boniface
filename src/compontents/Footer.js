@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
         <hr></hr>
         <div className='socials'>
-            <a href=''> <LinkedinIcon/></a>
+            <a href='/'> <LinkedinIcon/></a>
         </div>
 
       
